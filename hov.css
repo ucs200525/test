@@ -1,0 +1,28 @@
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+     /* Center the tooltip text */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Show the tooltip text when hovering */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
